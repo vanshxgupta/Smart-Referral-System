@@ -13,7 +13,7 @@ export default function Dashboard() {
       navigate("/login");
     } else {
       axios
-        .get(import.meta.env.VITE_API_BASE_URL + "/auth/user", {
+        .get(import.meta.env.VITE_API_BASE_URL + "/api/auth/user", {
           headers: { Authorization: `Bearer ${token}` },
         })
         .then((response) => setUserData(response.data))

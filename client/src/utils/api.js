@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL; // Adjust if needed
+const API_BASE = import.meta.env.VITE_API_BASE_URL + "/api"; // Adjust if needed
 
 
 export const fetchReferrals = async () => {
